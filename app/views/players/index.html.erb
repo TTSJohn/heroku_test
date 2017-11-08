@@ -17,7 +17,7 @@
       <tr>
         <td><%= player.name %></td>
         <td><%= player.team_id %></td>
-        <td><%= player.avatar %></td>
+        <td><%= image_tag player.avatar.thumb %></td>
         <td><%= link_to 'Show', player %></td>
         <td><%= link_to 'Edit', edit_player_path(player) %></td>
         <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
